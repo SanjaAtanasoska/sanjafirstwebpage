@@ -33,13 +33,40 @@
     display: none;
   }
 
-  #main-nav .container ul {
-  margin: 1rem 5rem;
+  #main-nav .container {
+    grid-template-columns: repeat(1, 5fr);
+  }
+  
+  #main-nav .container ul li a.current {
+    background: var(--dark-col);
+    color: var(--light-col);
+    border: 1px solid var(--dark-col);
+  }
+
+  #showcase .showcase-container {
+    flex: none;
+    height: 75vh;
+  }
+
+  #showcase .showcase-content h1 {
+    font-size: 2rem;
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 0.25rem;
+  }
+
+  #showcase .showcase-content p {
+    color: #000;
+    font-weight: normal;
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
   }
 
   #timeline ul li {
     margin-left: 25px;
   }
+
   #timeline ul li div {
     width: calc(100vw - 100px);
   }
